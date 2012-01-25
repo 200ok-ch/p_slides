@@ -8,7 +8,7 @@
     * generates nice slides in the browser (uses [slidy.js](http://www.w3.org/Talks/Tools/Slidy2/))
       * use arrow keys to navigate
       * use the generated 'table of contents' for quick navigation
-      * supports printing to pdf (see presentation.pdf)
+      * supports printing to pdf (see [presentation.pdf](https://github.com/preek/p_slides/raw/master/presentation.pdf))
 
 ## usage
 
