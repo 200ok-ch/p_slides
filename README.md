@@ -19,3 +19,15 @@
 * if need be, print the document to pdf
  * slides will automatically get separated into pages
  * styling will keep intact
+
+## syntax highlighting
+
+* write your code in &lt;pre&gt; tags or with plain markdown syntax
+* annotate the given language using a css class
+
+    &lt;pre class="syntax c"&gt;
+    static int foo;
+    void bar(void) {
+        foo = 0;
+        while (foo != 255) ; }
+    &lt;/pre&gt;
