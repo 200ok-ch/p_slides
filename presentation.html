@@ -44,6 +44,7 @@
 # syntax highlighting
 
 * write your code in &lt;pre&gt; tags 
+* or in plain markdown syntax (see below)
 * annotate the given language using a css class
 
 <pre>
@@ -62,6 +63,15 @@ void bar(void) {
     while (foo != 255) ; }
 </pre>
 
+
+* if you want to syntax highlight *all* your code in the same way
+  then you can uncomment and customize the following line at the
+  bottom of the presentation.html file:
+
+<pre>
+$('pre &gt; code').parent().addClass("syntax cpp");
+</pre>
+
 </script>
 
 <script>
@@ -72,6 +82,10 @@ void bar(void) {
     document.write('<div class=slide>' + slides[j] + '</div>');
   });
   $(".presentation").remove();
+  // if you want to syntax highlight *all* your code in the same way
+  // then you can uncomment and customize the next line
+  //
+  //$("pre>code").parent().addClass("syntax cpp");
   w3c_slidy.add_listener(document.body, "touchend", w3c_slidy.mouse_button_click);
   $.syntax(); 
 </script>
