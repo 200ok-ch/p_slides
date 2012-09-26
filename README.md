@@ -22,12 +22,19 @@
 
 ## syntax highlighting
 
-* write your code in &lt;pre&gt; tags or with plain markdown syntax
+* write your code in <pre> tags
+* or in plain markdown syntax (see below)
 * annotate the given language using a css class
 
-    &lt;pre class="syntax c"&gt;
+    <pre class="syntax c">
     static int foo;
     void bar(void) {
         foo = 0;
         while (foo != 255) ; }
-    &lt;/pre&gt;
+    </pre>
+
+* if you want to syntax highlight *all* your code in the same way
+  then you can uncomment and customize the following line at the
+  bottom of the presentation.html file:
+
+        $('pre > code').parent().addClass("syntax cpp");
