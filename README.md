@@ -22,7 +22,7 @@
 
 ## syntax highlighting
 
-* write your code in <pre> tags
+* write your code in &lt;pre&gt; tags
 * or in plain markdown syntax (see below)
 * annotate the given language using a css class
 
