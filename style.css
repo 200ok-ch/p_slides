@@ -12,3 +12,14 @@ h2, h3 { margin-bottom: 0.8em !important; }
 body code {
 	font-size: 80%;
 }
+
+/* the following concerns code _listings_
+ */
+.syntax-container.syntax-theme-base ol.syntax.highlighted li {
+        /* Font size is set by twitter_bootstrap.css or by
+	 * slidy.css to 100% and thus varies with the list
+	 * level we're in. We want to have constant code listing
+	 * font sizes.
+	 */
+	font-size: 10px;
+}
