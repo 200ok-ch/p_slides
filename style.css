@@ -15,6 +15,15 @@ body code {
 
 /* the following concerns code _listings_
  */
+.syntax-container.syntax-theme-base ol.syntax.highlighted {
+        /* The padding of the line numbers provided by
+	 * jquery.syntax.layout.list.css is too large.
+	 * Override and reduce the padding to ca. 2 digits
+	 * since the purpose of p_slides is presentations
+	 * and as such 3 digit line numbers will not occur.
+	 */
+	padding-left: 2em !important;
+}
 .syntax-container.syntax-theme-base ol.syntax.highlighted li {
         /* Font size is set by twitter_bootstrap.css or by
 	 * slidy.css to 100% and thus varies with the list
