@@ -1,3 +1,34 @@
 .syntax-container { font-size: 17px; }
 
 h2, h3 { margin-bottom: 0.8em !important; }
+
+
+/* Inline code can occur on every level of a list and
+ * inside p's, thus it should be adapted to the elements
+ * font size. twitter_bootstrap.css wants to set a fixed
+ * size for code though. Thus we override it here and
+ * inherit from the parent.
+ */
+body code {
+	font-size: 80%;
+}
+
+/* the following concerns code _listings_
+ */
+.syntax-container.syntax-theme-base ol.syntax.highlighted {
+        /* The padding of the line numbers provided by
+	 * jquery.syntax.layout.list.css is too large.
+	 * Override and reduce the padding to ca. 2 digits
+	 * since the purpose of p_slides is presentations
+	 * and as such 3 digit line numbers will not occur.
+	 */
+	padding-left: 2em !important;
+}
+.syntax-container.syntax-theme-base ol.syntax.highlighted li {
+        /* Font size is set by twitter_bootstrap.css or by
+	 * slidy.css to 100% and thus varies with the list
+	 * level we're in. We want to have constant code listing
+	 * font sizes.
+	 */
+	font-size: 10px;
+}
