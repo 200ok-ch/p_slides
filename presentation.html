@@ -3,13 +3,13 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>p_slides</title>
-    <link rel="stylesheet" type="text/css" media="screen, projection, print" href="slidy.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link rel="stylesheet" type="text/css" media="screen, print" href="twitter_bootstrap.css" />
-    <script src="showdown.js"></script>
-    <script src="slidy.js"></script>
-    <script src="jquery-syntax/jquery-1.4.4.min.js"></script>
-    <script src="jquery-syntax/jquery.syntax.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen, projection, print" href="assets/stylesheets/slidy.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen, print" href="assets/stylesheets/twitter_bootstrap.css" />
+    <script src="assets/javascripts/showdown.js"></script>
+    <script src="assets/javascripts/slidy.js"></script>
+    <script src="assets/javascripts/jquery-syntax/jquery-1.4.4.min.js"></script>
+    <script src="assets/javascripts/jquery-syntax/jquery.syntax.min.js"></script>
 </head>
 <body>
 
@@ -43,17 +43,17 @@
 
 # syntax highlighting
 
-* write your code in &lt;pre&gt; tags 
+* write your code in &lt;pre&gt; tags
 * or in plain markdown syntax (see below)
 * annotate the given language using a css class
 
 <pre>
-  &lt;pre class="syntax c"&gt;
-  static int foo;
-  void bar(void) {
-      foo = 0;
-      while (foo != 255) ; }
-  &lt;/pre&gt;
+&lt;pre class="syntax c"&gt;
+static int foo;
+void bar(void) {
+    foo = 0;
+    while (foo != 255) ; }
+&lt;/pre&gt;
 </pre>
 
 <pre class="syntax c">
@@ -87,7 +87,7 @@ $('pre &gt; code').parent().addClass("syntax cpp");
   //
   //$("pre>code").parent().addClass("syntax cpp");
   w3c_slidy.add_listener(document.body, "touchend", w3c_slidy.mouse_button_click);
-  $.syntax(); 
+  $.syntax();
 </script>
 </body>
 </html>
