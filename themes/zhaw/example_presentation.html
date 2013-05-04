@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>p_slides</title>
+      <link rel="stylesheet" type="text/css" media="screen, projection, print" href="assets/stylesheets/slidy.css" />
+      <link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/style.css" />
+      <link rel="stylesheet" type="text/css" media="screen, print" href="assets/stylesheets/twitter_bootstrap.css" />
+      <link rel="stylesheet" type="text/css" media="screen, print" href="themes/zhaw/zhaw.css" />
+      <script src="assets/javascripts/showdown/showdown.js"></script>
+      <script src="assets/javascripts/showdown/extensions/table.js"></script>
+      <script src="assets/javascripts/slidy.js"></script>
+      <script src="assets/javascripts/jquery-syntax/jquery-1.4.4.min.js"></script>
+      <script src="assets/javascripts/jquery-syntax/jquery.syntax.min.js"></script>
+
+      <script>
+        // configure theme variables here
+        var default_footer = "abr • long_title • lecturer • MM/YYYY •"
+      </script>
+      <script src="themes/zhaw/zhaw.js"></script>
+  </head>
+  <body>
+
+    <script type="p_slides" class="presentation">
+
+# p_slides
+## now rocking the zhaw theme by implementing extensions
+
+  * this slide has an explicit footer
+  * and has a table
+
+  | head 1 | head 2 | head 3          |
+  | ====== | ====== | =====           |
+  | cell 1 |        | cell 3          |
+  | **bold** | spanning 2 and 3       |
+  | ![Valid XHTML] (http://w3.org/Icons/valid-xhtml10) | ||
+
+<footer>
+Explicit footer with a <a href="#">link</a>.
+</footer>
+
+---
+
+# page numbering, implicit footer, print
+
+* automatic page numbering works
+* when no explicit footer is given, an implicit footer with information on the
+lecture is inserted
+* printing to pdf works
+ * see [zhaw_presentation.pdf](https://github.com/preek/p_slides/raw/master/zhaw_presentation.pdf)
+ * only in  webkit. not in ff or ie, because it wouldn't take
+the background-colors of the header)
+
+    </script>
+
+    <script>
+      $(".presentation").each(function() {
+        var markup = new Showdown.converter({ extensions: ['table'] }).
+        makeHtml($(this).html());
+      var slides = markup.split('<hr />');
+      for (var j = 0; j < slides.length; j++)
+        document.write('<div class=slide>' + slides[j] + '</div>');
+      });
+      $(".presentation").remove();
+      // if you want to syntax highlight *all* your code in the same way
+      // then you can uncomment and customize the next line
+      //
+      //$("pre>code").parent().addClass("syntax cpp");
+      w3c_slidy.add_listener(document.body, "touchend", w3c_slidy.mouse_button_click);
+      $.syntax();
+
+      // automatic detection for theme javascript so that it can run after
+      // slides have been generated
+      for(i in document.styleSheets) {
+        stylesheet = document.styleSheets[i].href
+          if (stylesheet && stylesheet.indexOf("theme") != -1) {
+            theme = stylesheet.slice(stylesheet.lastIndexOf("/")+1, stylesheet.length);
+            eval(theme.replace(".css", "()"));
+          }
+      }
+    </script>
+
+  </body>
+</html>

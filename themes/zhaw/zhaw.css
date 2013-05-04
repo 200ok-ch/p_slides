@@ -1,0 +1,30 @@
+.slide {
+  min-height: 400px;
+}
+
+h1 {
+  background: #006fad url('../../themes/zhaw/zhaw_logo_de.png') no-repeat top right 40px !important;
+  background-size: 62px !important;
+  background-position-y: 12px !important;
+  vertical-align: middle;
+  width: 100%;
+  padding: 20px 0 20px 40px !important;
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-size: 28pt !important;
+  -webkit-print-color-adjust:exact;
+}
+
+footer {
+  border: none;
+  background-color: #d6d6d6;
+  bottom: 5px;
+  font-size: 12px;
+  max-height: 20px !important;
+  padding: 5px 5px;
+}
+
+.page_no {
+  float: right;
+  margin-right: 20px;
+}
