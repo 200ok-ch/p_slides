@@ -6,7 +6,8 @@
     <link rel="stylesheet" type="text/css" media="screen, projection, print" href="assets/stylesheets/slidy.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/style.css" />
     <link rel="stylesheet" type="text/css" media="screen, print" href="assets/stylesheets/twitter_bootstrap.css" />
-    <script src="assets/javascripts/showdown.js"></script>
+    <script src="assets/javascripts/showdown/showdown.js"></script>
+    <script src="assets/javascripts/showdown/extensions/table.js"></script>
     <script src="assets/javascripts/slidy.js"></script>
     <script src="assets/javascripts/jquery-syntax/jquery-1.4.4.min.js"></script>
     <script src="assets/javascripts/jquery-syntax/jquery.syntax.min.js"></script>
@@ -19,7 +20,7 @@
 ## dead simple way to create semantic, nice to look at slides
 
   * forget about styling, only think about content
-    * write markdown inline in html (uses [showdown.js](https://github.com/coreyti/showdown))
+    * write markdown (uses [showdown.js](https://github.com/coreyti/showdown))
     * slides are automatically styled nicely (uses [twitter bootstrap](http://twitter.github.com/bootstrap/))
     * code samples are syntactically highlighted (uses [jquery syntax](http://www.oriontransfer.co.nz/projects/jquery-syntax/index.en))
     * generates nice slides in the browser (uses [slidy.js](http://www.w3.org/Talks/Tools/Slidy2/))
@@ -34,19 +35,18 @@
 * edit presentation.html to create your content
   * use regular [markdown syntax](http://daringfireball.net/projects/markdown/syntax)
   * create page breaks using '---'
-* open presentation.html in your favourite browser (tested in chrome/safari)
+* open presentation.html in your favourite browser
+  * tested in current versions of chrome/safari/ff
 * if need be, print the document to pdf
  * slides will automatically get separated into pages
- * styling will keep intact
 
 ---
-
 # syntax highlighting
 
 * write your code in &lt;pre&gt; tags
-* or in plain markdown syntax (see below)
 * annotate the given language using a css class
 
+## example code
 <pre>
 &lt;pre class="syntax c"&gt;
 static int foo;
@@ -56,6 +56,7 @@ void bar(void) {
 &lt;/pre&gt;
 </pre>
 
+## becomes
 <pre class="syntax c">
 static int foo;
 void bar(void) {
@@ -63,6 +64,8 @@ void bar(void) {
     while (foo != 255) ; }
 </pre>
 
+---
+# syntax highlighting
 
 * if you want to syntax highlight *all* your code in the same way
   then you can uncomment and customize the following line at the
@@ -76,7 +79,8 @@ $('pre &gt; code').parent().addClass("syntax cpp");
 
 <script>
   $(".presentation").each(function() {
-    var markup = new Showdown.converter().makeHtml($(this).html());
+    var markup = new Showdown.converter({ extensions: ['table'] }).
+                 makeHtml($(this).html());
     var slides = markup.split('<hr />');
     for (var j = 0; j < slides.length; j++)
     document.write('<div class=slide>' + slides[j] + '</div>');
