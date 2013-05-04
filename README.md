@@ -57,3 +57,12 @@ void bar(void) {
 <pre>
 $('pre &gt; code').parent().addClass("syntax cpp");
 </pre>
+
+---
+# extendability
+
+* p_slides supports theming
+* see
+ * [example presentation](https://github.com/munen/p_slides/themes/zhaw/raw/master/example_presentation.html)
+ * [example presentation pdf](https://github.com/munen/p_slides/themes/zhaw/raw/master/example_presentation.pdf)
+ * [example theme](https://github.com/munen/p_slides/themes/zhaw)
