@@ -33,7 +33,8 @@
 # usage
 
 * edit presentation.html to create your content
-  * use regular [markdown syntax](http://daringfireball.net/projects/markdown/syntax)
+  * use [markdown syntax](http://daringfireball.net/projects/markdown/syntax)
+    with [table extension](https://github.com/coreyti/showdown/blob/master/src/extensions/table.js)
   * create page breaks using '---'
 * open presentation.html in your favourite browser
   * tested in current versions of chrome/safari/ff
@@ -91,6 +92,7 @@ $('pre &gt; code').parent().addClass("syntax cpp");
   //
   //$("pre>code").parent().addClass("syntax cpp");
   w3c_slidy.add_listener(document.body, "touchend", w3c_slidy.mouse_button_click);
+  $.syntax();
   $.syntax();
 </script>
 </body>
