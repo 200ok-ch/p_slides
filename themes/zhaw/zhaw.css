@@ -1,5 +1,6 @@
 .slide {
   min-height: 400px;
+  -webkit-print-color-adjust:exact;
 }
 
 h1 {
@@ -12,7 +13,6 @@ h1 {
   color: white;
   font-family: "Arial", sans-serif;
   font-size: 28pt !important;
-  -webkit-print-color-adjust:exact;
 }
 
 footer {
