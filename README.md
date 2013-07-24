@@ -40,12 +40,12 @@ void bar(void) {
 </pre>
 
 ## becomes
-<pre class="syntax c">
+```c
 static int foo;
 void bar(void) {
     foo = 0;
     while (foo != 255) ; }
-</pre>
+```
 
 ---
 # syntax highlighting
