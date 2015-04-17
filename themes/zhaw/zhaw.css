@@ -4,15 +4,15 @@
 }
 
 h1 {
-  background: #006fad url('../../themes/zhaw/zhaw_logo_de.png') no-repeat top right 40px !important;
+  background: #006fad url('zhaw_logo_de.png') no-repeat right top !important;
   background-size: 62px !important;
   background-position-y: 12px !important;
   vertical-align: middle;
-  width: 100%;
-  padding: 20px 0 20px 40px !important;
+  padding: 20px 0 20px 10px !important;
   color: white;
   font-family: "Arial", sans-serif;
   font-size: 28pt !important;
+  margin-right: 0px !important;
 }
 
 footer {
@@ -27,4 +27,24 @@ footer {
 .page_no {
   float: right;
   margin-right: 20px;
+}
+
+.syntax-container {
+  margin: 20px 0;
+}
+
+.slide p,
+.slide th,
+.slide td {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.syntax-container.syntax-theme-base ol.syntax.highlighted {
+  padding-left: 60px !important;
+}
+
+.syntax-container.syntax-theme-base ol.syntax.highlighted li {
+  font-size: 20px;
 }
