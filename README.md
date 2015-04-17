@@ -10,6 +10,9 @@
       * use the generated 'table of contents' for quick navigation
       * supports printing to pdf (see [presentation.pdf](https://github.com/munen/p_slides/raw/master/build/presentation.pdf))
       * every slide has a unique url for easy sharing
+      * supports having a timer in the presentation (see meta[name="duration"] element in presentation.html
+        * use an empty first slide if you don't want the timer to start
+          automatically
 
 ---
 
