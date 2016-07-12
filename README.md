@@ -2,17 +2,20 @@
 ## dead simple way to create semantic, nice to look at slides
 
   * forget about styling, only think about content
-    * write markdown (uses [showdown.js](https://github.com/coreyti/showdown))
-    * slides are automatically styled nicely (uses [twitter bootstrap](http://twitter.github.com/bootstrap/))
-    * code samples are syntactically highlighted (uses [jquery syntax](http://www.oriontransfer.co.nz/projects/jquery-syntax/index.en))
-    * generates nice slides in the browser (uses [slidy.js](http://www.w3.org/Talks/Tools/Slidy2/))
-      * use arrow keys to navigate
-      * use the generated 'table of contents' for quick navigation
-      * supports printing to pdf (see [presentation.pdf](https://github.com/munen/p_slides/raw/master/build/presentation.pdf))
-      * every slide has a unique url for easy sharing
-      * supports having a timer in the presentation (see meta[name="duration"] element in presentation.html
-        * use an empty first slide if you don't want the timer to start
-          automatically
+  * write markdown (uses [showdown.js](https://github.com/coreyti/showdown))
+  * slides are automatically styled nicely (uses [twitter bootstrap](http://twitter.github.com/bootstrap/))
+  * code samples are syntactically highlighted (uses [jquery syntax](http://www.oriontransfer.co.nz/projects/jquery-syntax/index.en))
+  * generates nice slides in the browser (uses [slidy.js](http://www.w3.org/Talks/Tools/Slidy2/))
+    * use arrow keys to navigate
+    * use the generated 'table of contents' for quick navigation
+    * supports printing to pdf (see [presentation.pdf](https://github.com/munen/p_slides/raw/master/build/presentation.pdf))
+    * every slide has a unique url for easy sharing
+    * supports having a timer in the presentation (see meta[name="duration"] element in presentation.html
+      * use an empty first slide if you don't want the timer to start
+        automatically
+  * p_slides is static files only, it doesn't need a server,
+    pre-compilation or a special editor (unless of course *your*
+    favorite and very special editor!)
 
 ---
 
