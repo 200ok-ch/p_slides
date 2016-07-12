@@ -25,7 +25,7 @@
   * use [markdown syntax](http://daringfireball.net/projects/markdown/syntax)
     with [table extension](https://github.com/showdownjs/table-extension)
   * create page breaks using '---'
-* open presentation.html in your favourite browser
+* open [presentation.html](http://rawgit.com/munen/p_slides/master/themes/zhaw/example_presentation.html) in your favourite browser
   * tested in current versions of chrome/safari/ff
 * if need be, print the document to pdf
  * slides will automatically get separated into pages
