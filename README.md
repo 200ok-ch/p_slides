@@ -23,7 +23,7 @@
 
 * edit presentation.html to create your content
   * use [markdown syntax](http://daringfireball.net/projects/markdown/syntax)
-    with [table extension](https://github.com/coreyti/showdown/blob/master/src/extensions/table.js)
+    with [table extension](https://github.com/showdownjs/table-extension)
   * create page breaks using '---'
 * open presentation.html in your favourite browser
   * tested in current versions of chrome/safari/ff
