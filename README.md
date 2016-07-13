@@ -8,7 +8,7 @@
   * for editing and presenting, there are no external dependencies -
     it's just a html file (therefore it can easily be put into version
     control for example)
-  * it's extendable and supports themes(for more, see [extendability](#extendability))
+  * it's extendable and supports themes(see section "extensibility" for details)
   * write markdown (uses [showdown.js](https://github.com/coreyti/showdown))
   * slides are automatically styled nicely (uses [twitter bootstrap](http://twitter.github.com/bootstrap/))
   * code samples are syntactically highlighted (uses [jquery syntax](https://github.com/ioquatix/jquery-syntax))
@@ -70,7 +70,7 @@ $('pre &gt; code').parent().addClass("syntax cpp");
 </pre>
 
 ---
-# extendability
+# extensibility
 
 * p_slides supports theming
 * see
