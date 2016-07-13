@@ -15,7 +15,7 @@
   * generates nice slides in the browser (uses [slidy.js](http://www.w3.org/Talks/Tools/Slidy2/))
     * use arrow keys to navigate
     * use the generated 'table of contents' for quick navigation
-    * supports printing to pdf (see [presentation.pdf](https://github.com/munen/p_slides/raw/master/build/presentation.pdf))
+    * supports printing to pdf (see [presentation.pdf](https://cdn.rawgit.com/munen/p_slides/0.1.0/build/presentation.pdf))
     * every slide has a unique url for easy sharing
     * supports having a timer in the presentation (see meta[name="duration"] element in presentation.html
       * use an empty first slide if you don't want the timer to start
@@ -29,7 +29,7 @@
   * use [markdown syntax](http://daringfireball.net/projects/markdown/syntax)
     with [table extension](https://github.com/showdownjs/table-extension)
   * create page breaks using '---'
-* open [presentation.html](http://rawgit.com/munen/p_slides/master/themes/zhaw/example_presentation.html) in your favourite browser
+* open [presentation.html](http://cdn.rawgit.com/munen/p_slides/0.1.0/themes/zhaw/example_presentation.html) in your favourite browser
   * tested in current versions of chrome/safari/ff
 * if need be, print the document to pdf
  * slides will automatically get separated into pages
@@ -74,10 +74,18 @@ $('pre &gt; code').parent().addClass("syntax cpp");
 
 * p_slides supports theming
 * see
- * [example presentation](http://rawgit.com/munen/p_slides/master/themes/zhaw/example_presentation.html)
-    * All links within the example are linking to rawgit.com to enable
+ * [example presentation](http://cdn.rawgit.com/munen/p_slides/0.1.0/themes/zhaw/example_presentation.html)
+    * All links within the example are linking to cdn.rawgit.com to enable
       immediate preview from Github. When you're building your own
       presentation starting with this example, you may want to change
       the URLs to local URLs depending on how you distribute your presentation.
- * [example presentation pdf](https://github.com/munen/p_slides/raw/master/themes/zhaw/zhaw_presentation.pdf)
- * [example theme](https://github.com/munen/p_slides/tree/master/themes/zhaw)
+ * [example presentation pdf](https://cdn.rawgit.com/munen/p_slides/0.1.0/themes/zhaw/zhaw_presentation.pdf)
+ * [example theme](https://cdn.rawgit.com/munen/p_slides/tree/0.1.0/themes/zhaw)
+
+---
+# development
+
+## upgrade
+
+* create a new tag
+* change cdn.rawgit.com links to assets (examples and README) to refer to new tag
