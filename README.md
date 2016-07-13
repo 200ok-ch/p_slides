@@ -2,6 +2,13 @@
 ## dead simple way to create semantic, nice to look at slides
 
   * forget about styling, only think about content
+  * p_slides is static files only, it doesn't need a server, installed
+    software, pre-compilation or a special editor (unless of course
+    *your* favorite and very special editor!)
+  * for editing and presenting, there are no external dependencies -
+    it's just a html file (therefore it can easily be put into version
+    control for example)
+  * it's extendable and supports themes(for more, see [extendability](#extendability))
   * write markdown (uses [showdown.js](https://github.com/coreyti/showdown))
   * slides are automatically styled nicely (uses [twitter bootstrap](http://twitter.github.com/bootstrap/))
   * code samples are syntactically highlighted (uses [jquery syntax](https://github.com/ioquatix/jquery-syntax))
@@ -13,9 +20,6 @@
     * supports having a timer in the presentation (see meta[name="duration"] element in presentation.html
       * use an empty first slide if you don't want the timer to start
         automatically
-  * p_slides is static files only, it doesn't need a server,
-    pre-compilation or a special editor (unless of course *your*
-    favorite and very special editor!)
 
 ---
 
