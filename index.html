@@ -4,19 +4,19 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <title>P slides by munen</title>
+    <title>p_slides by munen</title>
   </head>
 
   <body>
 
     <header>
       <div class="container">
-        <h1>P slides</h1>
-        <h2>write slides in markdown</h2>
+        <h1>p_slides</h1>
+        <h2>dead simple way to create semantic, nice to look at slides - without any dependencies</h2>
 
         <section id="downloads">
           <a href="https://github.com/munen/p_slides/zipball/master" class="btn">Download as .zip</a>
@@ -28,101 +28,156 @@
 
     <div class="container">
       <section id="main_content">
-       <h2>dead simple way to create semantic, nice to look at slides</h2>
- 
- <ul>
-	<li>forget about styling, only think about content
-<ul>
-	<li>write markdown (uses <a href="https://github.com/coreyti/showdown">showdown.js</a>)</li>
-	<li>slides are automatically styled nicely (uses <a href="http://twitter.github.com/bootstrap/">twitter bootstrap</a>)</li>
-	<li>code samples are syntactically highlighted (uses <a href="http://www.oriontransfer.co.nz/projects/jquery-syntax/index.en">jquery syntax</a>)</li>
-	<li>generates nice slides in the browser (uses <a href="http://www.w3.org/Talks/Tools/Slidy2/">slidy.js</a>)
-<ul>
-	<li>use arrow keys to navigate</li>
-	<li>use the generated 'table of contents' for quick navigation</li>
-	<li>supports printing to pdf (see <a href="https://github.com/munen/p_slides/raw/master/build/presentation.pdf">presentation.pdf</a>)</li>
-	<li>every slide has a unique url for easy sharing</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<br>
-<hr style="color: #cccccc;" />
-<br>
-<h2>USAGE</h2>
- 
- <ul>
-	<li>edit presentation.html to create your content
-<ul>
-	<li>use <a href="http://daringfireball.net/projects/markdown/syntax">markdown syntax</a> with <a href="https://github.com/coreyti/showdown/blob/master/src/extensions/table.js">table extension</a></li>
-	<li>create page breaks using '---'</li>
-</ul>
-</li>
-	<li>open presentation.html in your favourite browser
-<ul>
-	<li>tested in current versions of chrome/safari/ff</li>
-</ul>
-</li>
-	<li>if need be, print the document to pdf
-<ul>
-	<li>slides will automatically get separated into pages</li>
-</ul>
-</li>
-</ul>
-<br>
-<hr style="color: #cccccc;" />
-<br>
-<h2>SYNTAX HIGHLIGHTING</h2>
+        <h1>
+<a id="p_slides" class="anchor" href="#p_slides" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>p_slides</h1>
+
+<h2>
+<a id="dead-simple-way-to-create-semantic-nice-to-look-at-slides" class="anchor" href="#dead-simple-way-to-create-semantic-nice-to-look-at-slides" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>dead simple way to create semantic, nice to look at slides</h2>
 
 <ul>
-	<li>write your code in &lt;pre&gt; tags</li>
-	<li>annotate the given language using a css class</li>
+<li>forget about styling, only think about content</li>
+<li>p_slides is static files only, it doesn't need a server, installed
+software, pre-compilation or a special editor (unless of course
+<em>your</em> favorite and very special editor!)</li>
+<li>for editing and presenting, there are no external dependencies -
+it's just a html file (therefore it can easily be put into version
+control for example)</li>
+<li>it's extendable and supports themes(see section "extensibility" for details)</li>
+<li>write markdown (uses <a href="https://github.com/coreyti/showdown">showdown.js</a>)</li>
+<li>slides are automatically styled nicely (uses <a href="http://twitter.github.com/bootstrap/">twitter bootstrap</a>)</li>
+<li>code samples are syntactically highlighted (uses <a href="https://github.com/ioquatix/jquery-syntax">jquery syntax</a>)</li>
+<li>generates nice slides in the browser (uses <a href="http://www.w3.org/Talks/Tools/Slidy2/">slidy.js</a>)
+
+<ul>
+<li>use arrow keys to navigate</li>
+<li>use the generated 'table of contents' for quick navigation</li>
+<li>supports printing to pdf (see <a href="https://cdn.rawgit.com/munen/p_slides/0.1.0/build/presentation.pdf">presentation.pdf</a>)</li>
+<li>every slide has a unique url for easy sharing</li>
+<li>supports having a timer in the presentation (see meta[name="duration"] element in presentation.html
+
+<ul>
+<li>use an empty first slide if you don't want the timer to start
+automatically</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
-<h3>example</h3>
+<hr>
 
-<pre>&lt;pre class="syntax c"&gt;
+<h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>usage</h1>
+
+<ul>
+<li>edit presentation.html to create your content
+
+<ul>
+<li>use <a href="http://daringfireball.net/projects/markdown/syntax">markdown syntax</a>
+with <a href="https://github.com/showdownjs/table-extension">table extension</a>
+</li>
+<li>create page breaks using '---'</li>
+</ul>
+</li>
+<li>open <a href="http://cdn.rawgit.com/munen/p_slides/0.1.0/themes/zhaw/example_presentation.html">presentation.html</a> in your favourite browser
+
+<ul>
+<li>tested in current versions of chrome/safari/ff</li>
+</ul>
+</li>
+<li>if need be, print the document to pdf
+
+<ul>
+<li>slides will automatically get separated into pages</li>
+</ul>
+</li>
+</ul>
+
+<hr>
+
+<h1>
+<a id="syntax-highlighting" class="anchor" href="#syntax-highlighting" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>syntax highlighting</h1>
+
+<ul>
+<li>write your code in &lt;pre&gt; tags</li>
+<li>annotate the given language using a css class</li>
+</ul>
+
+<h2>
+<a id="example-code" class="anchor" href="#example-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>example code</h2>
+
+<pre>
+&lt;pre class="syntax c"&gt;
 static int foo;
 void bar(void) {
     foo = 0;
     while (foo != 255) ; }
 &lt;/pre&gt;
 </pre>
-<br>
-<h3>becomes</h3> 
 
-<div class="highlight highlight-c">
-<pre><span class="k" style="font-weight: bold;">static</span> <span class="kt" style="font-weight: bold;">int</span> <span class="n">foo</span><span class="p">;</span>
-<span class="kt" style="font-weight: bold;">void</span> <span class="nf" style="font-weight: bold;">bar</span><span class="p">(</span><span class="kt" style="font-weight: bold;">void</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">foo</span> <span class="o" style="font-weight: bold;">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k" style="font-weight: bold;">while</span> <span class="p">(</span><span class="n">foo</span> <span class="o" style="font-weight: bold;">!=</span> <span class="mi">255</span><span class="p">)</span> <span class="p">;</span> <span class="p">}</span>
-</pre>
-</div>
-<br>
+<h2>
+<a id="becomes" class="anchor" href="#becomes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>becomes</h2>
+
+<div class="highlight highlight-source-c"><pre><span class="pl-k">static</span> <span class="pl-k">int</span> foo;
+<span class="pl-k">void</span> <span class="pl-en">bar</span>(<span class="pl-k">void</span>) {
+    foo = <span class="pl-c1">0</span>;
+    <span class="pl-k">while</span> (foo != <span class="pl-c1">255</span>) ; }</pre></div>
+
+<hr>
+
+<h1>
+<a id="syntax-highlighting-1" class="anchor" href="#syntax-highlighting-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>syntax highlighting</h1>
+
 <ul>
-	<li>if you want to syntax highlight <em>all</em> your code in the same way then you can uncomment and customize the following line at the bottom of the presentation.html file:</li>
+<li>if you want to syntax highlight <em>all</em> your code in the same way
+then you can uncomment and customize the following line at the
+bottom of the presentation.html file:</li>
 </ul>
-<pre>$('pre &gt; code').parent().addClass("syntax cpp");
+
+<pre>
+$('pre &gt; code').parent().addClass("syntax cpp");
 </pre>
-<br>
-<hr style="color: #cccccc;" />
-<br>
-<h2>EXTENDABILITY</h2>
+
+<hr>
+
+<h1>
+<a id="extensibility" class="anchor" href="#extensibility" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>extensibility</h1>
 
 <ul>
-	<li>p_slides supports theming</li>
-	<li>see
+<li>p_slides supports theming</li>
+<li>see
+
 <ul>
-	<li><a href="https://github.com/munen/p_slides/raw/master/themes/zhaw/example_presentation.html">example presentation</a></li>
-	<li><a href="https://github.com/munen/p_slides/raw/master/themes/zhaw/zhaw_presentation.pdf">example presentation pdf</a></li>
-	<li><a href="https://github.com/munen/p_slides/tree/master/themes/zhaw">example theme</a></li>
+<li>
+<a href="http://cdn.rawgit.com/munen/p_slides/0.1.0/themes/zhaw/example_presentation.html">example presentation</a>
+
+<ul>
+<li>All links within the example are linking to cdn.rawgit.com to enable
+immediate preview from Github. When you're building your own
+presentation starting with this example, you may want to change
+the URLs to local URLs depending on how you distribute your presentation.</li>
+</ul>
+</li>
+<li><a href="https://cdn.rawgit.com/munen/p_slides/0.1.0/themes/zhaw/zhaw_presentation.pdf">example presentation pdf</a></li>
+<li><a href="https://cdn.rawgit.com/munen/p_slides/tree/0.1.0/themes/zhaw">example theme</a></li>
 </ul>
 </li>
 </ul>
 
-        </section>
-     </div>
+<hr>
+
+<h1>
+<a id="development" class="anchor" href="#development" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>development</h1>
+
+<h2>
+<a id="upgrade" class="anchor" href="#upgrade" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>upgrade</h2>
+
+<ul>
+<li>create a new tag</li>
+<li>change cdn.rawgit.com links to assets (examples and README) to refer to new tag</li>
+</ul>
+      </section>
+    </div>
 
     
   </body>
