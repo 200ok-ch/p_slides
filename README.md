@@ -190,7 +190,7 @@ endfunction
 
 | Library | License |
 | ------- | ------- |
-| [slidy2](http://www.w3.org/Talks/Tools/Slidy2/)) | [W3C software license](http://www.w3.org/Consortium/Legal/copyright-software) |
+| [slidy2](http://www.w3.org/Talks/Tools/Slidy2/) | [W3C software license](http://www.w3.org/Consortium/Legal/copyright-software) |
 | [jquery-syntax](https://github.com/ioquatix/jquery-syntax) | MIT |
 | [bootstrap](https://github.com/twbs/bootstrap) | MIT |
 | [remarkable](https://github.com/jonschlinkert/remarkable) | MIT |
