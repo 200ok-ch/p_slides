@@ -21,16 +21,12 @@
       * use an empty first slide if you don't want the timer to start
         automatically
 
----
-
 # demo
 
 * open the [demo presentation.html](http://cdn.rawgit.com/munen/p_slides/0.1.0/themes/zhaw/example_presentation.html) in your favourite browser
   * tested in current versions of chrome/safari/ff
 * print the document to pdf if you need to
  * slides will automatically get separated into pages
-
----
 
 # usage
 
@@ -39,7 +35,6 @@
   * supports tables with [Github flavored markdown syntax](https://help.github.com/articles/organizing-information-with-tables/)
   * create page breaks using '---'
 
----
 # syntax highlighting
 
 * write your code in &lt;pre&gt; tags
@@ -63,7 +58,6 @@ void bar(void) {
     while (foo != 255) ; }
 ```
 
----
 # syntax highlighting
 
 * if you want to syntax highlight *all* your code in the same way
@@ -74,7 +68,6 @@ void bar(void) {
 $('pre &gt; code').parent().addClass("syntax cpp");
 </pre>
 
----
 # extensibility
 
 * p_slides supports themes
@@ -89,6 +82,63 @@ $('pre &gt; code').parent().addClass("syntax cpp");
   * [zhaw theme](https://cdn.rawgit.com/munen/p_slides/tree/0.1.0/themes/zhaw)
 
 ---
+
+# rationale
+
+* Five years ago I became a lecturer at the Zurich University of
+  applied Sciences
+* With this, I was tasked with creating great lectures with good
+  presentations and labs
+* Looking at the landscape of the popular tools out there, I saw that
+  most people are doing WYSIWYG - however, I knew that this was going
+  to be a waste of time (I'm not going into this generic argument
+  here, if you don't agree, that's absolutely ok)
+* I wanted a tool that
+  * works well cross-platform
+  * works well with version control
+  * uses a succinct and well-known markup language (markdown, org-mode, ...)
+  * has no dependencies to install for other lecturers
+  * allows for demos in the browser with distribution via PDF
+  * allows editing with a regular text editor (for me that was VIM for
+    well over a decade, now it's Emacs), because this yields the
+    greatest typing efficiency
+* There was no such thing in 2011, so I created p_slides
+* To this day p_slides prevails with regard to the above list
+  * There are a lot of other tools out there, but as far as I know,
+    they all fail one of the above criteria.
+
+# p_slides design decisions
+
+* a p_slide presentation is only a static file that you can put into
+  version control and work on collaboratively with your peers
+* p_slides is explicitly dumb
+  * it has no requirements to install additional software, pre-compile
+    anything or run a server
+  * therefore it is completely self-contained/self-hosted and doesn't
+    require any complications for less technical users
+    * no usage of the command-line is required (no ruby, node, npm,
+      browserify, gulp, babel, ...)
+    * no compilation step is required
+    * no hosting solution is preferred, not even Github Pages
+
+# difference to reveal-js (and other popular options)
+
+* Out of the box reveal-js does not support Markdown Slides. Yes, of
+  course they do, but you'll have to write HTML per slide and then
+  embed Markdown. With p_slides, you'll write your markdown directly
+  inline - no HTML cruft where it doesn't add benefit.
+
+* reveal-js is _much_ bigger whereas p_slides relies on well tested
+  and established software. For example many features that you can
+  find on the reveal-js README are also included in p_slides, because
+  it uses W3Org slidy-js. p_slides actually is only very little code
+  itself as it glues together very well established and good existing
+  libraries. reveal-js does a lot by itself. Both options are valid,
+  yet they are different(;
+
+
+
+
 # development
 
 ## upgrade
