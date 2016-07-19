@@ -12,7 +12,7 @@
   * write markdown (uses [remarkable.js](https://github.com/jonschlinkert/remarkable))
   * slides are automatically styled nicely (uses [twitter bootstrap](http://twitter.github.com/bootstrap/))
   * code samples are syntactically highlighted (uses [jquery syntax](https://github.com/ioquatix/jquery-syntax))
-  * generates nice slides in the browser (uses [slidy.js](http://www.w3.org/Talks/Tools/Slidy2/))
+  * generates nice slides in the browser (uses [slidy2](http://www.w3.org/Talks/Tools/Slidy2/))
     * use arrow keys to navigate
     * use the generated 'table of contents' for quick navigation
     * supports printing to pdf (see [presentation.pdf](https://cdn.rawgit.com/munen/p_slides/0.1.2/build/presentation.pdf))
@@ -131,7 +131,7 @@ $('pre &gt; code').parent().addClass("syntax cpp");
 * reveal-js is _much_ bigger whereas p_slides relies on well tested
   and established software. For example many features that you can
   find on the reveal-js README are also included in p_slides, because
-  it uses W3Org slidy-js. p_slides actually is only very little code
+  it uses W3Org slidy2. p_slides actually is only very little code
   itself as it glues together very well established and good existing
   libraries. reveal-js does a lot by itself. Both options are valid,
   yet they are different(;
@@ -178,3 +178,20 @@ endfunction
 
 * create a new tag
 * change cdn.rawgit.com links to assets (examples and README) to refer to new tag
+
+# contributors
+
+* Alain M Lafon ([github](https://github.com/munen))
+* Tomáš Pospíšek ([github](https://github.com/tpo))
+
+---
+
+# license
+
+| Library | License |
+| ------- | ------- |
+| [slidy2](http://www.w3.org/Talks/Tools/Slidy2/)) | [W3C software license](http://www.w3.org/Consortium/Legal/copyright-software) |
+| [jquery-syntax](https://github.com/ioquatix/jquery-syntax) | MIT |
+| [bootstrap](https://github.com/twbs/bootstrap) | MIT |
+| [remarkable](https://github.com/jonschlinkert/remarkable) | MIT |
+| p_slides | GNU AGPL |
