@@ -15,7 +15,7 @@
   * generates nice slides in the browser (uses [slidy.js](http://www.w3.org/Talks/Tools/Slidy2/))
     * use arrow keys to navigate
     * use the generated 'table of contents' for quick navigation
-    * supports printing to pdf (see [presentation.pdf](https://cdn.rawgit.com/munen/p_slides/0.1.0/build/presentation.pdf))
+    * supports printing to pdf (see [presentation.pdf](https://cdn.rawgit.com/munen/p_slides/0.1.2/build/presentation.pdf))
     * every slide has a unique url for easy sharing
     * supports having a timer in the presentation (see meta[name="duration"] element in presentation.html
       * use an empty first slide if you don't want the timer to start
@@ -23,7 +23,7 @@
 
 # demo
 
-* open the [demo presentation.html](http://cdn.rawgit.com/munen/p_slides/0.1.0/themes/zhaw/example_presentation.html) in your favourite browser
+* open the [demo presentation.html](http://cdn.rawgit.com/munen/p_slides/0.1.2/themes/zhaw/example_presentation.html) in your favourite browser
   * tested in current versions of chrome/safari/ff
 * print the document to pdf if you need to
  * slides will automatically get separated into pages
@@ -72,14 +72,14 @@ $('pre &gt; code').parent().addClass("syntax cpp");
 
 * p_slides supports themes
 * see
-  * [example presentation](http://cdn.rawgit.com/munen/p_slides/0.1.0/themes/zhaw/example_presentation.html)
+  * [example presentation](http://cdn.rawgit.com/munen/p_slides/0.1.2/themes/zhaw/example_presentation.html)
      * All links within this example are linking to cdn.rawgit.com to
        enable immediate preview from Github. When you're building your
        own presentation, you can use the
        [kickstart presentation.html](presentation.html) which refers
        to local assets.
-  * [example presentation pdf](https://cdn.rawgit.com/munen/p_slides/0.1.0/themes/zhaw/zhaw_presentation.pdf)
-  * [zhaw theme](https://cdn.rawgit.com/munen/p_slides/tree/0.1.0/themes/zhaw)
+  * [example presentation pdf](https://cdn.rawgit.com/munen/p_slides/0.1.2/themes/zhaw/zhaw_presentation.pdf)
+  * [zhaw theme](https://cdn.rawgit.com/munen/p_slides/tree/0.1.2/themes/zhaw)
 
 ---
 
