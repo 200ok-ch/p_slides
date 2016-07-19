@@ -9,7 +9,7 @@
     it's just a html file (therefore it can easily be put into version
     control for example)
   * it's extendable and supports themes(see section "extensibility" for details)
-  * write markdown (uses [showdown.js](https://github.com/coreyti/showdown))
+  * write markdown (uses [remarkable.js](https://github.com/jonschlinkert/remarkable))
   * slides are automatically styled nicely (uses [twitter bootstrap](http://twitter.github.com/bootstrap/))
   * code samples are syntactically highlighted (uses [jquery syntax](https://github.com/ioquatix/jquery-syntax))
   * generates nice slides in the browser (uses [slidy.js](http://www.w3.org/Talks/Tools/Slidy2/))
@@ -23,16 +23,21 @@
 
 ---
 
+# demo
+
+* open the [demo presentation.html](http://cdn.rawgit.com/munen/p_slides/0.1.0/themes/zhaw/example_presentation.html) in your favourite browser
+  * tested in current versions of chrome/safari/ff
+* print the document to pdf if you need to
+ * slides will automatically get separated into pages
+
+---
+
 # usage
 
-* edit presentation.html to create your content
+* edit the [kickstart presentation.html](presentation.html) to create your content
   * use [markdown syntax](http://daringfireball.net/projects/markdown/syntax)
-    with [table extension](https://github.com/showdownjs/table-extension)
+  * supports tables with [Github flavored markdown syntax](https://help.github.com/articles/organizing-information-with-tables/)
   * create page breaks using '---'
-* open [presentation.html](http://cdn.rawgit.com/munen/p_slides/0.1.0/themes/zhaw/example_presentation.html) in your favourite browser
-  * tested in current versions of chrome/safari/ff
-* if need be, print the document to pdf
- * slides will automatically get separated into pages
 
 ---
 # syntax highlighting
@@ -72,15 +77,16 @@ $('pre &gt; code').parent().addClass("syntax cpp");
 ---
 # extensibility
 
-* p_slides supports theming
+* p_slides supports themes
 * see
- * [example presentation](http://cdn.rawgit.com/munen/p_slides/0.1.0/themes/zhaw/example_presentation.html)
-    * All links within the example are linking to cdn.rawgit.com to enable
-      immediate preview from Github. When you're building your own
-      presentation starting with this example, you may want to change
-      the URLs to local URLs depending on how you distribute your presentation.
- * [example presentation pdf](https://cdn.rawgit.com/munen/p_slides/0.1.0/themes/zhaw/zhaw_presentation.pdf)
- * [example theme](https://cdn.rawgit.com/munen/p_slides/tree/0.1.0/themes/zhaw)
+  * [example presentation](http://cdn.rawgit.com/munen/p_slides/0.1.0/themes/zhaw/example_presentation.html)
+     * All links within this example are linking to cdn.rawgit.com to
+       enable immediate preview from Github. When you're building your
+       own presentation, you can use the
+       [kickstart presentation.html](presentation.html) which refers
+       to local assets.
+  * [example presentation pdf](https://cdn.rawgit.com/munen/p_slides/0.1.0/themes/zhaw/zhaw_presentation.pdf)
+  * [zhaw theme](https://cdn.rawgit.com/munen/p_slides/tree/0.1.0/themes/zhaw)
 
 ---
 # development
