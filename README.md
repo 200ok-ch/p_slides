@@ -194,4 +194,5 @@ endfunction
 | [jquery-syntax](https://github.com/ioquatix/jquery-syntax) | MIT |
 | [bootstrap](https://github.com/twbs/bootstrap) | MIT |
 | [remarkable](https://github.com/jonschlinkert/remarkable) | MIT |
-| p_slides | GNU AGPL |
+
+p_slides is licensed under the [GNU AGPL](LICENSE).
