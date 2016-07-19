@@ -72,7 +72,7 @@ $('pre &gt; code').parent().addClass("syntax cpp");
 
 * p_slides supports themes
 * see
-  * [example presentation](http://cdn.rawgit.com/munen/p_slides/0.1.2/themes/zhaw/example_presentation.html)
+  * [example presentation](http://rawgit.com/munen/p_slides/master/themes/zhaw/example_presentation.html)
      * All links within this example are linking to cdn.rawgit.com to
        enable immediate preview from Github. When you're building your
        own presentation, you can use the
