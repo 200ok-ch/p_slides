@@ -139,6 +139,37 @@ $('pre &gt; code').parent().addClass("syntax cpp");
 
 
 
+# editing tips
+With p_slides you are completely free to use your favorite Editor -
+that might be Atom, Visual Studio Code, Notepad++ or anything
+really. All of them have good markdown integration - for some of them
+please find the documentation directly here:
+## Emacs
+For Emacs, there is a great
+[markdown-mode](http://jblevins.org/projects/markdown-mode/). With
+this snippet in your `init.el`, you can automatically enable it. The
+snippet also shows how to enable automatic spell checking with [flyspell-mode](https://ftp.gnu.org/old-gnu/Manuals/emacs-20.7/html_node/emacs_97.html).
+```elisp
+(add-to-list 'auto-mode-alist '("presentation.html" . markdown-mode))
+;; If you are into spell-checking
+(add-hook 'markdown-mode-hook 'flyspell-mode)
+```
+## VIM
+If you want VIM to automatically use Tim Popes great
+[markdown plugin](https://github.com/tpope/vim-markdown), use this
+snippet for VIM to automatically register the correct filetype - or
+write a better solutions and make me a Pull Request(;
+
+```VimL
+au! BufRead,BufNewFile *html,*htm call TestForPSlides()
+"Check whether it is a p_slides presentation
+function TestForPSlides()
+  if match(join(getline(1,'$')), 'p_slides') > 0
+    set filetype=markdown
+  endif
+endfunction
+```
+
 # development
 
 ## upgrade
