@@ -48,3 +48,32 @@ footer {
 .syntax-container.syntax-theme-base ol.syntax.highlighted li {
   font-size: 20px;
 }
+
+/*
+   Styling of trivia Questions
+   - Use a <h2.trivia></h2>
+   - And write a question underneath
+*/
+
+h2.trivia:before {
+    content: "¿ Trivia Question ?";
+    padding-left: 112px;
+}
+
+h2.trivia {
+    background-color: orange;
+    width: 70%;
+    margin: 1.2em auto auto auto;
+}
+
+
+h2.trivia + p + p:before {
+    content: "⊝ ";
+}
+
+h2.trivia + p + p {
+    background-color: lightgrey;
+    width: 70%;
+    margin: auto auto;
+    padding: 10px;
+}
