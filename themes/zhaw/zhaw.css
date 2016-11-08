@@ -1,7 +1,14 @@
+@media screen {
+    .slide {
+        padding-top: 10px !important;
+    }
+}
+
 .slide {
   min-height: 400px;
   -webkit-print-color-adjust:exact;
 }
+
 
 h1 {
   background: #006fad url('zhaw_logo_de.png') no-repeat right top !important;
@@ -33,7 +40,34 @@ footer {
   margin: 20px 0;
 }
 
-.slide p,
+.slide h1 {
+    font-size: 180%;
+    line-height: 150%;
+}
+
+.slide h2 {
+    font-size: 160%;
+    line-height: 140%;
+}
+
+
+.slide h3 {
+    font-size: 140%;
+    line-heigt: 120%;
+}
+
+.slide h4 {
+    font-size: 120%;
+    line-height: 100%;
+}
+
+
+.slide p {
+  font-family: "Arial", sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+}
+
 .slide th,
 .slide td {
   font-family: "Arial", sans-serif;
@@ -41,10 +75,52 @@ footer {
   line-height: 30px;
 }
 
+.slide li {
+    color: #000 !important;
+}
 .syntax-container.syntax-theme-base ol.syntax.highlighted {
   padding-left: 60px !important;
 }
 
 .syntax-container.syntax-theme-base ol.syntax.highlighted li {
   font-size: 20px;
+}
+
+/*
+   Styling of trivia Questions
+   - Use a <h2.trivia></h2>
+   - And write a question underneath
+*/
+
+h2.trivia:before {
+    content: "¿ Trivia Question ?";
+    padding-left: 112px;
+}
+
+h2.trivia {
+    background-color: orange;
+    width: 70%;
+    margin: 1.2em auto auto auto;
+}
+
+
+h2.trivia + p + p:before {
+    content: "⊝ ";
+}
+
+h2.trivia + p + p {
+    background-color: lightgrey;
+    width: 70%;
+    margin: auto auto;
+    padding: 10px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left, .right {
+  margin-right: 2.5%;
 }
