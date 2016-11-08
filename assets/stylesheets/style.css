@@ -32,3 +32,40 @@ body code {
 	 */
 	font-size: 10px;
 }
+
+
+.slide {
+    max-height: 768px;
+    max-width: 1024px;
+    overflow: hidden;
+}
+
+.slide img {
+    max-height: 700px;
+    max-width: 100%;
+}
+
+.slide .left {
+  width: 45%;
+  float: left;
+}
+
+.slide .right {
+  width: 45%;
+  float: left;
+}
+
+@media screen {
+    .slide {
+        /* Center Slide on Screen */
+        margin: auto auto !important;
+        box-shadow: 10px 10px 20px 3px rgba(0,0,0,0.27);
+    }
+}
+
+@media print {
+    .slide {
+        font-family: "Arial", sans-serif;
+        border: 0 !important;
+    }
+}
