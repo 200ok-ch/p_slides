@@ -25,10 +25,12 @@ h1 {
 footer {
   border: none;
   background-color: #d6d6d6;
-  bottom: 5px;
   font-size: 12px;
-  max-height: 20px !important;
   padding: 5px 5px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
 }
 
 .page_no {
