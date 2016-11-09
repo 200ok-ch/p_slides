@@ -8,3 +8,4 @@ public/cache
 .#*
 example_presentation.html
 /themes/zhaw/.tern-port
+/assets/javascripts/.tern-port
