@@ -4,6 +4,12 @@
     }
 }
 
+@media print {
+  footer {
+    display: none;
+  }
+}
+
 .slide {
   min-height: 400px;
   -webkit-print-color-adjust:exact;
@@ -125,4 +131,5 @@ h2.trivia + p + p {
 
 .left, .right {
   margin-right: 2.5%;
+  max-height: 95%;
 }
