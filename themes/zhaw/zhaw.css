@@ -127,6 +127,7 @@ h2.trivia + p + p {
     width: 70%;
     margin: auto auto;
     padding: 10px;
+    text-align: center;
 }
 
 .flex-center {
