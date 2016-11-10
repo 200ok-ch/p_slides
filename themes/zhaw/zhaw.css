@@ -4,11 +4,24 @@
     }
 }
 
+@media print {
+  img {
+    max-height: 12cm !important
+  }
+}
+
+
 .slide {
   min-height: 400px;
   -webkit-print-color-adjust:exact;
 }
 
+code {
+  font-size: 100%;
+  background-color: #f2f2f2;
+  border: 1px dotted #999999;
+  border-radius: 5px;
+}
 
 h1 {
   background: #006fad url('zhaw_logo_de.png') no-repeat right top !important;
@@ -113,6 +126,7 @@ h2.trivia + p + p {
     width: 70%;
     margin: auto auto;
     padding: 10px;
+    text-align: center;
 }
 
 .flex-center {
@@ -123,4 +137,9 @@ h2.trivia + p + p {
 
 .left, .right {
   margin-right: 2.5%;
+}
+
+
+img {
+  max-width: 100%;
 }
