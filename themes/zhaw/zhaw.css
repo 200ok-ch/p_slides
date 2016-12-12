@@ -140,3 +140,11 @@ h2.trivia + p + p {
   margin-right: 2.5%;
   max-height: 95%;
 }
+
+/* A Box with a nice linear gradient */
+.grad {
+  /* background: linear-gradient(160deg, #f6e6b4 0%,#edb017 100%); */
+  background: linear-gradient(160deg, rgba(192,210,192,1) 0%, rgba(255,240,220,1) 50%, rgba(192,210,192,1) 100%);
+  padding: 5%;
+  width: 90%%;
+}
