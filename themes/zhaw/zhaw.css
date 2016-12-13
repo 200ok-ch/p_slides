@@ -136,15 +136,43 @@ h2.trivia + p + p {
     justify-content: center;
 }
 
+.comment {
+  padding-left: 2em;
+  margin-top: 2em;
+  background-image: url("images/comment.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  min-height: 45px;
+}
+
 .left, .right {
   margin-right: 2.5%;
   max-height: 95%;
 }
 
+/* END: vertically center */
+
 /* A Box with a nice linear gradient */
-.grad {
+.grad, .grad-pos {
   /* background: linear-gradient(160deg, #f6e6b4 0%,#edb017 100%); */
   background: linear-gradient(160deg, rgba(192,210,192,1) 0%, rgba(255,240,220,1) 50%, rgba(192,210,192,1) 100%);
+  text-align: center;
+  font-size: 1.25em;
   padding: 5%;
   width: 90%%;
+}
+
+.grad-neg {
+  background: linear-gradient(160deg, rgba(232,44,12,1) 0%, rgba(255,240,220,1) 50%, rgba(232,44,12,1) 100%);
+  text-align: center;
+  font-size: 1.25em;
+  padding: 5%;
+  width: 90%%;
+  font-weight: bold;
+}
+
+
+
+.slide ul {
+  margin-left: 2em;
 }
