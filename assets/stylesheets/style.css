@@ -55,6 +55,11 @@ body code {
   float: left;
 }
 
+img {
+  max-height: 600px !important;
+  width: auto !important;
+}
+
 @media screen {
     .slide {
         /* Center Slide on Screen */
