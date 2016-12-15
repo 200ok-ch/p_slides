@@ -2,8 +2,10 @@ $(".presentation").each(function() {
     var md = new Remarkable('full', { html: true });
     var markup = md.render($(this).html());
     var slides = markup.split('<hr>');
+    var new_document = [];
     for (var j = 0; j < slides.length; j++)
-        document.write('<div class=slide>' + slides[j] + '</div>');
+        new_document.push('<div class=slide>' + slides[j] + '</div>');
+    document.write(new_document.join(""));
 });
 $(".presentation").remove();
 
