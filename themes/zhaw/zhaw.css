@@ -150,8 +150,6 @@ h2.trivia + p + p {
   max-height: 95%;
 }
 
-/* END: vertically center */
-
 /* A Box with a nice linear gradient */
 .grad, .grad-pos {
   /* background: linear-gradient(160deg, #f6e6b4 0%,#edb017 100%); */
@@ -169,10 +167,4 @@ h2.trivia + p + p {
   padding: 5%;
   width: 90%%;
   font-weight: bold;
-}
-
-
-
-.slide ul {
-  margin-left: 2em;
 }
