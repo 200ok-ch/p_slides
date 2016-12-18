@@ -1,6 +1,6 @@
 .syntax-container { font-size: 17px; }
 
-h2, h3 { margin-bottom: 0.8em !important; }
+h2, h3, h4 { margin-bottom: 0.8em !important; }
 
 
 /* Inline code can occur on every level of a list and
@@ -58,7 +58,7 @@ body code {
   margin-left: 2em;
 }
 
-.slide h2, .slide h3, .slide p, .slide div {
+.slide h2, .slide h3, .slide h4, .slide p, .slide div {
   margin-left: 15px;
 }
 
