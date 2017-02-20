@@ -136,7 +136,7 @@ h2.trivia + p + p {
     justify-content: center;
 }
 
-.comment {
+.note {
   padding-left: 2em;
   margin-top: 2em;
   background-image: url("images/comment.png");
