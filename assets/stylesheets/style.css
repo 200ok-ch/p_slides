@@ -40,7 +40,7 @@ body code {
 }
 
 .slide img {
-    max-height: 700px;
+    max-height: 700px !important;
     max-width: 100%;
 }
 
