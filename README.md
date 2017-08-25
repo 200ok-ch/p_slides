@@ -139,6 +139,54 @@ $('pre &gt; code').parent().addClass("syntax cpp");
 
 
 
+# printing to pdf
+
+## Using a browser
+
+Printing the slides to PDF can be done in any browser that supports
+printing to PDF. Choose landscape over portrait and whatever paper size
+that looks good. The required paper size differs from Browser to Browser
+and OS to OS.
+
+If possible, use one of these browsers: Chromium, Chrome, Safari
+
+## Using phantomjs and pdftk for some automation goodness
+
+If you have **phantomjs** and \`pdftk\` installed, you can use the
+included command-line utility:
+
+```shell
+./bin/create_pdf.js URL
+```
+
+This will create a \`presentation.pdf\` file for the particular slide
+deck.
+
+Note that the first slide will be cut, because for us this is usually an
+empty slide. That's what pdftk is used for.
+
+Your mileage may vary for how good the resulting PDF is. This relies on
+your version of phantomjs and some QT libraries.
+
+## Using wkhtmltopdf and pdftk
+
+If you have \`wkhtmltopdf\` installed, you can use this one-liner to
+produce PDFs from the HTML presentation:
+
+```shell
+
+wkhtmltopdf -s A7 --javascript-delay 500 -d 300 -O Landscape URL tmp.pdf
+pdftk tmp.pdf cat 2-end output presentation.pdf
+
+```
+
+Note that the first slide will be cut, because for us this is usually an
+empty slide. That's what pdftk is used for.
+
+Your mileage may vary for how good the resulting PDF is. This relies on
+your version of phantomjs and some QT libraries.
+
+
 # editing tips
 With p_slides you are completely free to use your favorite Editor -
 that might be Atom, Visual Studio Code, Notepad++ or anything
