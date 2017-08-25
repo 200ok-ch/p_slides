@@ -147,6 +147,15 @@ h2.trivia + p + p {
     justify-content: center;
 }
 
+.note {
+  padding-left: 2em;
+  margin-top: 2em;
+  background-image: url("images/comment.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  min-height: 45px;
+}
+
 .left, .right {
   margin-right: 2.5%;
   max-height: 95%;
@@ -155,4 +164,24 @@ h2.trivia + p + p {
 
 img {
   max-width: 100%;
+}
+
+/* A Box with a nice linear gradient */
+.grad, .grad-pos {
+  background: linear-gradient(160deg, #0012B9 0%, #00BD58 50%, #0012B9 100%);
+  text-align: center;
+  font-size: 1.25em;
+  border-radius: 25px;
+  padding: 5%;
+  width: 90%%;
+}
+
+.grad-neg {
+  background: linear-gradient(160deg, #FF3900 0%, #FFBA00 50%, #FF3900 100%);
+  text-align: center;
+  font-size: 1.25em;
+  border-radius: 25px;
+  padding: 5%;
+  width: 90%%;
+  font-weight: bold;
 }

@@ -8,7 +8,6 @@ function zhaw() {
   page_count = 1;
   $('.slide').each(function() {
     footer = $(this).find("footer");
-    console.log(footer);
     //
     if (footer.length == 0) {
       $(this).append("<footer>" + default_footer + "</footer>");
