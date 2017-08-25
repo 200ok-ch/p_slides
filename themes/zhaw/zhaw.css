@@ -10,6 +10,16 @@
   }
 }
 
+  footer {
+    display: none;
+  }
+
+  img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+}
 
 .slide {
   min-height: 400px;
@@ -38,10 +48,12 @@ h1 {
 footer {
   border: none;
   background-color: #d6d6d6;
-  bottom: 5px;
   font-size: 12px;
-  max-height: 20px !important;
   padding: 5px 5px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
 }
 
 .page_no {
@@ -137,6 +149,7 @@ h2.trivia + p + p {
 
 .left, .right {
   margin-right: 2.5%;
+  max-height: 95%;
 }
 
 

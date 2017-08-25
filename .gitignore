@@ -7,3 +7,5 @@ public/cache
 .DS_Store
 .#*
 example_presentation.html
+/themes/zhaw/.tern-port
+/assets/javascripts/.tern-port
