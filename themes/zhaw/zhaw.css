@@ -6,7 +6,8 @@
 
 @media print {
   img {
-    max-height: 12cm !important
+    max-height: 12cm !important;
+    max-width: 95% !important;
   }
 }
 
