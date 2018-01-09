@@ -89,6 +89,13 @@ img {
 }
 
 @media print {
+  @page {
+    size: landscape;
+    /* Smaller default margin to remove headers and footers when
+       printing from Chrome */
+    margin: 25px;
+  }
+
   .slide {
     font-family: "Arial", sans-serif;
     border: 0 !important;

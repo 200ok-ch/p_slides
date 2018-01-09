@@ -150,58 +150,44 @@ and OS to OS.
 
 If possible, use one of these browsers: Chromium, Chrome, Safari
 
-## Using phantomjs and pdftk for some automation goodness
+## Automated export as PDF
 
-If you have **phantomjs** and \`pdftk\` installed, you can use the
-included command-line utility:
+If you have **chrome/chromium**, you can automate the export:
 
 ```shell
-./bin/create_pdf.js URL
+chromium --headless --disable-gpu --print-to-pdf=presentation.pdf "URL"
 ```
 
 This will create a \`presentation.pdf\` file for the particular slide
 deck.
 
-Note that the first slide will be cut, because for us this is usually an
-empty slide. That's what pdftk is used for.
-
-Your mileage may vary for how good the resulting PDF is. This relies on
-your version of phantomjs and some QT libraries.
-
-## Using wkhtmltopdf and pdftk
-
-If you have \`wkhtmltopdf\` installed, you can use this one-liner to
-produce PDFs from the HTML presentation:
+If you want to, you can automatically cut the first slide, because for
+us this is usually an empty slide. That's what **pdftk** is used for.
 
 ```shell
-
-wkhtmltopdf -s A7 --javascript-delay 500 -d 300 -O Landscape URL tmp.pdf
-pdftk tmp.pdf cat 2-end output presentation.pdf
-
+pdftk presentation.pdf cat 2-end output final.pdf
 ```
 
-Note that the first slide will be cut, because for us this is usually an
-empty slide. That's what pdftk is used for.
-
-Your mileage may vary for how good the resulting PDF is. This relies on
-your version of phantomjs and some QT libraries.
-
-
 # editing tips
+
 With p_slides you are completely free to use your favorite Editor -
 that might be Atom, Visual Studio Code, Notepad++ or anything
 really. All of them have good markdown integration - for some of them
 please find the documentation directly here:
+
 ## Emacs
+
 For Emacs, there is a great
 [markdown-mode](http://jblevins.org/projects/markdown-mode/). With
 this snippet in your `init.el`, you can automatically enable it. The
 snippet also shows how to enable automatic spell checking with [flyspell-mode](https://ftp.gnu.org/old-gnu/Manuals/emacs-20.7/html_node/emacs_97.html).
+
 ```elisp
 (add-to-list 'auto-mode-alist '("presentation.html" . markdown-mode))
 ;; If you are into spell-checking
 (add-hook 'markdown-mode-hook 'flyspell-mode)
 ```
+
 ## VIM
 If you want VIM to automatically use Tim Popes great
 [markdown plugin](https://github.com/tpope/vim-markdown), use this
