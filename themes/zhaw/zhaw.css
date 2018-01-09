@@ -5,25 +5,8 @@
 }
 
 @media print {
-  .slide {
-    max-height: 740px !important;
-    overflow: hidden;
-  }
-
-  img {
-    max-height: 12cm !important;
-    max-width: 95% !important;
-  }
-}
-
   footer {
     display: none;
-  }
-
-  img {
-    width: 90%;
-    margin: 0 auto;
-    display: block;
   }
 }
 
