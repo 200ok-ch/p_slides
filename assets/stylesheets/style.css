@@ -10,38 +10,38 @@ h2, h3, h4 { margin-bottom: 0.8em !important; }
  * inherit from the parent.
  */
 body code {
-	font-size: 80%;
+  font-size: 80%;
 }
 
 /* the following concerns code _listings_
  */
 .syntax-container.syntax-theme-base ol.syntax.highlighted {
-        /* The padding of the line numbers provided by
-	 * jquery.syntax.layout.list.css is too large.
-	 * Override and reduce the padding to ca. 2 digits
-	 * since the purpose of p_slides is presentations
-	 * and as such 3 digit line numbers will not occur.
-	 */
-	padding-left: 2em !important;
+  /* The padding of the line numbers provided by
+   * jquery.syntax.layout.list.css is too large.
+   * Override and reduce the padding to ca. 2 digits
+   * since the purpose of p_slides is presentations
+   * and as such 3 digit line numbers will not occur.
+   */
+  padding-left: 2em !important;
 }
 .syntax-container.syntax-theme-base ol.syntax.highlighted li {
-        /* Font size is set by twitter_bootstrap.css or by
-	 * slidy.css to 100% and thus varies with the list
-	 * level we're in. We want to have constant code listing
-	 * font sizes.
-	 */
-	font-size: 10px;
+  /* Font size is set by twitter_bootstrap.css or by
+   * slidy.css to 100% and thus varies with the list
+   * level we're in. We want to have constant code listing
+   * font sizes.
+   */
+  font-size: 10px;
 }
 
 .slide {
-    max-height: 768px;
-    max-width: 1024px;
-    overflow: hidden;
+  max-height: 768px;
+  max-width: 1024px;
+  overflow: hidden;
 }
 
 .slide img {
-    max-height: 700px !important;
-    max-width: 100%;
+  max-height: 700px !important;
+  max-width: 100%;
 }
 
 .slide .left {
@@ -75,30 +75,30 @@ img {
 }
 
 .shadow {
-    box-shadow: 7px 7px 7px lightgray;
+  box-shadow: 7px 7px 7px lightgray;
 }
 
 @media screen {
-    .slide {
-        /* Center Slide on Screen */
-        margin: auto auto !important;
-        box-shadow: 10px 10px 20px 3px rgba(0,0,0,0.27);
-    }
+  .slide {
+    /* Center Slide on Screen */
+    margin: auto auto !important;
+    box-shadow: 10px 10px 20px 3px rgba(0,0,0,0.27);
+  }
 }
 
 @media print {
-    .slide {
-        font-family: "Arial", sans-serif;
-        border: 0 !important;
-	max-height: 716px !important;
-	overflow: hidden;
-    }
+  .slide {
+    font-family: "Arial", sans-serif;
+    border: 0 !important;
+    max-height: 716px !important;
+    overflow: hidden;
+  }
 
-    .slide img {
-	width: 90%;
-	max-height: 600px !important;
-	max-width: 85% !important;
-	margin: 0 auto;
-	display: block;
-    }
+  .slide img {
+    width: 90%;
+    max-height: 600px !important;
+    max-width: 85% !important;
+    margin: 0 auto;
+    display: block;
+  }
 }
