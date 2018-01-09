@@ -231,6 +231,7 @@ endfunction
 
 * Alain M Lafon ([github](https://github.com/munen))
 * Tomáš Pospíšek ([github](https://github.com/tpo))
+* Philipp Hofmann ([github](https://github.com/branch14))
 
 ---
 
