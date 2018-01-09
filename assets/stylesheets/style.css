@@ -40,8 +40,10 @@ body code {
 }
 
 .slide img {
-  max-height: 700px !important;
+  max-height: 600px !important;
   max-width: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
 .slide .left {
@@ -98,7 +100,5 @@ img {
     width: 90%;
     max-height: 600px !important;
     max-width: 85% !important;
-    margin: 0 auto;
-    display: block;
   }
 }
