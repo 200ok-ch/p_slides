@@ -90,5 +90,15 @@ img {
     .slide {
         font-family: "Arial", sans-serif;
         border: 0 !important;
+	max-height: 716px !important;
+	overflow: hidden;
+    }
+
+    .slide img {
+	width: 90%;
+	max-height: 600px !important;
+	max-width: 85% !important;
+	margin: 0 auto;
+	display: block;
     }
 }
