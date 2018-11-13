@@ -46,6 +46,10 @@ body code {
   display: block;
 }
 
+.slide img.icon {
+  display: inline;
+}
+
 .slide .left {
   width: 45%;
   float: left;
