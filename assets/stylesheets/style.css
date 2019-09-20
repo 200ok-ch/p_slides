@@ -39,7 +39,7 @@ body code {
   overflow: hidden;
 }
 
-.slide img {
+.slide :not(h1) img {
   max-height: 600px !important;
   max-width: 100%;
   margin: 0 auto;
